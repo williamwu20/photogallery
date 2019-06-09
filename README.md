@@ -1,2 +1,2 @@
-# photogallery
-a javascript photogallery with custom webpack
+# Photogallery
+React photogallery with custom webpack
