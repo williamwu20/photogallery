@@ -1,5 +1,6 @@
 var path = require('path');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var HtmlWebPackPlugin = require("html-webpack-plugin");
 var webpack = require('webpack');
 
 module.exports = {
@@ -29,7 +30,6 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
-                
             },
             {
                 test: /\.(png|jp(e*)g|gif)$/,
@@ -49,7 +49,15 @@ module.exports = {
                         name: './[name].[ext]'
                     } 
                 }]
-            }
+            },
+            {
+                test: /\.html$/,
+                use: [
+                  {
+                    loader: "html-loader"
+                  }
+                ]
+              }
         ]
     },
     plugins: [
@@ -57,6 +65,10 @@ module.exports = {
             filename: '[name].[hash].css',
             chunkFilename: '[id].[hash].css',
           }),
+          new HtmlWebPackPlugin({
+            template: "./src/index.html",
+            filename: "./index.html"
+          })
     ],
     stats: {
         colors: true
