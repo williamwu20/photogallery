@@ -1,5 +1,7 @@
-import Hello from './Component.jsx'
 import React from 'react'
 import { render } from 'react-dom'
+import PhotoGallery from './components/PhotoGallery.jsx'
+import { photos } from './data/photos'
+import './style.css'
 
-render(<Hello />, document.querySelector('#root'))
+render(<PhotoGallery photos={photos} />, document.querySelector('#root'))
