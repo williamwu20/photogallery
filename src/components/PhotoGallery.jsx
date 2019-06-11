@@ -19,8 +19,8 @@ export default class PhotoGallery extends React.Component {
                     </div>))}
                 </ReactSwipe>
                 <div className='controls'>
-                    <button onClick={() => this.reactSwipeEl.prev()}>Previous</button>
-                    <button onClick={() => this.reactSwipeEl.next()}>Next</button>
+                    <button className='previous' onClick={() => this.reactSwipeEl.prev()}>Previous</button>
+                    <button className='next' onClick={() => this.reactSwipeEl.next()}>Next</button>
                 </div>
             </div>
         )
