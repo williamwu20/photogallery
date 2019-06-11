@@ -83,27 +83,8 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-a {
-  color: #14ade5;
-}
-a:hover {
-  text-decoration: none;
-}
-
 .center {
   text-align: center;
-}
-
-h1 {
-  font-size: 34px;
-  margin: 50px auto 20px;
-  color: #212121;
-}
-
-h2 {
-  font-size: 14px;
-  color: #3c3c3c;
-  margin: 10px;
 }
 
 .carousel {
