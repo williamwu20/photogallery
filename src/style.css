@@ -55,7 +55,6 @@ section {
 }
 
 img {
-  position: relative;
   float: center;
   width:  500px;
   height: 300px;
@@ -63,11 +62,12 @@ img {
 
 p {
   position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate( -50%, -50% );
   text-align: center;
-  bottom: 20px;
-  right: 400px;
-  background-color: black;
   color: white;
+  background-color: black;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -111,15 +111,12 @@ h2 {
 }
 
 .carousel .item {
+  position: relative;
+  display: inline-block;
   font-weight: bold;
   color: navy;
   font-size: 20px;
   text-align: center;
-  /* margin: 10px;
-  padding: 100px 10px; */
   box-shadow: 0 1px #ebebeb;
-  /* background: #fff; */
   border-radius: 5px;
-  /* border: 1px;
-  border-color: #e5e5e5 #d3d3d3 #b9c1c6; */
 }

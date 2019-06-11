@@ -12,8 +12,8 @@ export default class PhotoGallery extends React.Component {
                     childCount={this.props.photos.length}
                     ref={el => (this.reactSwipeEl = el)}
                 >
-                    {this.props.photos.map(photo => (
-                    <div className='item'> 
+                    {this.props.photos.map((photo, i) => (
+                    <div className='item' key={i}>
                         <img src={photo.url} />
                         <p>{photo.caption}</p>
                     </div>))}
