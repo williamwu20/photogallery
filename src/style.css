@@ -61,7 +61,7 @@ img {
   height: 300px;
 }
 
-.caption {
+p {
   position: absolute;
   text-align: center;
   bottom: 20px;
