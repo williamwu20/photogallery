@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoGallery render matches the snapshot 1`] = `
+<div>
+  <div
+    className="react-swipe-container carousel"
+    style={
+      Object {
+        "overflow": "hidden",
+        "position": "relative",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className="item"
+        style={
+          Object {
+            "float": "left",
+            "position": "relative",
+            "transitionProperty": "transform",
+            "width": "100%",
+          }
+        }
+      >
+        <img
+          src="photo_url"
+        />
+        <p>
+          photo_caption
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="controls"
+  >
+    <button
+      className="previous"
+      onClick={[Function]}
+    >
+      Previous
+    </button>
+    <button
+      className="next"
+      onClick={[Function]}
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

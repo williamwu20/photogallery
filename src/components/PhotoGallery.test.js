@@ -1,6 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import PhotoGallery from './PhotoGallery.jsx'
+import renderer from 'react-test-renderer'
 import '../jest.setup'
 
 describe(PhotoGallery, () => {
@@ -20,6 +21,12 @@ describe(PhotoGallery, () => {
       const wrapper = shallow(<PhotoGallery photos={photos} />)
       expect(wrapper.find('.previous').length).toEqual(1)
       expect(wrapper.find('.next').length).toEqual(1)
+    })
+    it('matches the snapshot', () => {
+      const tree = renderer
+            .create(<PhotoGallery photos={photos} />)
+            .toJSON()
+       expect(tree).toMatchSnapshot()
     })
   })
 })

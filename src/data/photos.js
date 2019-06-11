@@ -7,7 +7,7 @@ import house5 from './images/house_5.jpeg'
 export const photos = [
     {
         url: house1,
-        caption: 'blaaarrrgghhhhhhhhhhhhhhhhhhhhhhh'
+        caption: 'Buy this house now!'
     },
     {
         url: house2,
