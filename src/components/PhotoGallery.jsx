@@ -26,3 +26,7 @@ export default class PhotoGallery extends React.Component {
         )
     }
 }
+
+PhotoGallery.propTypes = {
+    photos: PropTypes.array
+}
